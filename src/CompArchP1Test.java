@@ -5,19 +5,18 @@ public class CompArchP1Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		int fin = in.nextInt();
-		int x = 0;
-		int y = 0;
-		int steps = 0;
-		int first = 1;
-		int second = 2;
+		long fin = in.nextInt();
+		long x = 0;
+		long y = 0;
+		long steps = 0;
+		long first = 1;
+		long second = 2;
 		boolean done = false;
 		
 		while(!done) {
 			// Add to the right
 			x++;
 			steps++;
-			System.out.println(steps);
 			if(fin == steps) {
 				break;
 			}
@@ -27,7 +26,7 @@ public class CompArchP1Test {
 				y++;
 				++steps;
 			}
-			System.out.println(steps);
+			
 			if(fin == steps) {
 				break;
 			}
@@ -37,7 +36,7 @@ public class CompArchP1Test {
 				x--;
 				++steps;
 			}
-			System.out.println(steps);
+			
 			if(fin == steps) {
 				break;
 			}
@@ -48,14 +47,13 @@ public class CompArchP1Test {
 			if(fin == steps) {
 				break;
 			}
-			System.out.println(x + " " + y);
-			System.out.println(steps);
+	
 			// Move to the right 
 			for (int i = 0; i < second && steps < fin; i++) {
 				++steps;
 				x++;
 			}
-			System.out.println(steps);
+			
 			if(fin == steps) {
 				break;
 			}
@@ -65,7 +63,7 @@ public class CompArchP1Test {
 				++steps;
 				y--;
 			}
-			System.out.println(steps);
+			
 			if(fin == steps) {
 				break;
 			}
